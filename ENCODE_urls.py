@@ -84,31 +84,31 @@ a['control']=control
 	
 a['replicate']=lst
 a['fastq']=fastq
-a=a.set_index('experiment_target')
-a=a.reindex(columns=['replicate', 'fastq', 'URL', 'control'])
+#a=a.set_index('experiment_target')
+a=a.reindex(columns=['experiment_target','replicate', 'fastq', 'URL', 'control'])
 
 a.to_csv('python_tf_output.csv')
 
 
-
 #Merge rows according to provided datasheet format
+df=pd.DataFrame(columns=['target', 'replicate', 'fastq1', 'fastq2', 'control1', 'control2'])
 
-#evens=[]
-#for num in range(0, len(a), 2):
-#    even=a.iloc[num, :]
-#    evens.append(even)
+a_fastq1=a.loc[a['fastq'] == 'fastq 1']
+a_fastq2=a.loc[a['fastq'] == 'fastq 2']
 
-#odds=[]
-#for num in range(1, len(a), 2):
-#    odd=a.iloc[num, :]
-#    odds.append(odd)
-	
-#merged=list(zip(evens, odds))
-#merged1=[]
+df['target']=a_fastq1['experiment_target']
+df=df.set_index('target')
+a_fastq1=a_fastq1.set_index('experiment_target')
+a_fastq2=a_fastq2.set_index('experiment_target')
 
-#for item in merged:            #Generates list of lists containing associated dataframes
-#    item=list(item)
-#    merged1.append(item)
+df['replicate']=a_fastq1['replicate']
+df['fastq1']=a_fastq1['URL']
+df['fastq2']=a_fastq2['URL']
+df['control1']=a_fastq1['control']
+df['control2']=a_fastq2['control']
+
+df.to_csv('design.csv')
+
 
 	
 
