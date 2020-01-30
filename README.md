@@ -1,4 +1,6 @@
 # Rinn_Class_Repository
-add anything here guys like cool codes to make our excel file
+### "all_tf_metadata.sh"
+this script takes our downloaded metadata file and creates a file called "filtered_tf_metadata.csv" that containes all the fastq information from the original metadata file.
 
-Daniel, if u see this message you've used git pull correctly!
+### "ENCODE_urls.py"
+This script takes "filtered_tf_metadata.csv" and organizes it into a design file with full control URLs.
