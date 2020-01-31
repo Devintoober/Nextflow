@@ -4,3 +4,5 @@ this script takes our downloaded metadata file and creates a file called "filter
 
 ### "ENCODE_urls.py"
 This script takes "filtered_tf_metadata.csv" and organizes it into a design file with full control URLs.
+##Daniel edits 
+
