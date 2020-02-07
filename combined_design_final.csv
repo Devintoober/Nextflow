@@ -15,7 +15,7 @@ WT_INPUT,1,fastq/ENCFF002EFD.fastq.gz,fastq/ENCFF002EFA.fastq.gz,,
 WT_INPUT,2,fastq/ENCFF002EFH.fastq.gz,fastq/ENCFF002EFF.fastq.gz,,
 WT_INPUT,3,fastq/ENCFF410PHD.fastq.gz,fastq/ENCFF368UOC.fastq.gz,,
 WT_INPUT,4,ENCFF240DTE.fastq.gz,fastq/ENCFF608MDV.fastq.gz,,
-HDAC3-human,3,fastq/ENCFF942ZRE.fastq.gz,fastq/ENCFF908SKY.fastq.gz,HDAC3-human,input_library
-HDAC3-human,4,fastq/ENCFF770NDG.fastq.gz,fastq/ENCFF369MSV.fastq.gz,HDAC3-human,input_library
-input_library,3,fastq/ENCFF498JMO.fastq.gz,fastq/ENCFF502GTS.fastq.gz,,"        		"
-input_library,4,fastq/ENCFF259GQA.fastq.gz,fastq/ENCFF837MIV.fastq.gz,,"      		"
+HDAC3-human,1,fastq/ENCFF942ZRE.fastq.gz,fastq/ENCFF908SKY.fastq.gz,HDAC3-human,input_library
+HDAC3-human,2,fastq/ENCFF770NDG.fastq.gz,fastq/ENCFF369MSV.fastq.gz,HDAC3-human,input_library
+input_library,1,fastq/ENCFF498JMO.fastq.gz,fastq/ENCFF502GTS.fastq.gz,,"        		"
+input_library,2,fastq/ENCFF259GQA.fastq.gz,fastq/ENCFF837MIV.fastq.gz,,"      		"
