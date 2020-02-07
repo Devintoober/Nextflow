@@ -1,5 +1,0 @@
-group,replicate,fastq_1,fastq_2,antibody,Controlled by,Controlled by
-DDX20-human,1,https://www.encodeproject.org/files/ENCFF771DFR/@@download/ENCFF771DFR.fastq.gz,https://www.encodeproject.org/files/ENCFF071FDG/@@download/ENCFF071FDG.fastq.gz,DDX20-human,/files/ENCFF002EFF/,/files/ENCFF002EFA/
-DDX20-human,2,https://www.encodeproject.org/files/ENCFF881HGO/@@download/ENCFF881HGO.fastq.gz,https://www.encodeproject.org/files/ENCFF931EDX/@@download/ENCFF931EDX.fastq.gz,DDX20-human,/files/ENCFF002EFD/,/files/ENCFF002EFH/
-DDX20-human,1,https://www.encodeproject.org/files/ENCFF706WJQ/@@download/ENCFF706WJQ.fastq.gz,https://www.encodeproject.org/files/ENCFF077SBC/@@download/ENCFF077SBC.fastq.gz,DDX20-human,/files/ENCFF467ZVS/,/files/ENCFF969JRS/
-DDX20-human,2,https://www.encodeproject.org/files/ENCFF129CFJ/@@download/ENCFF129CFJ.fastq.gz,https://www.encodeproject.org/files/ENCFF674JSK/@@download/ENCFF674JSK.fastq.gz,DDX20-human,/files/ENCFF467ZVS/,/files/ENCFF969JRS/
