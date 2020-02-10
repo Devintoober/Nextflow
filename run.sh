@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH -p long
-#SBATCH --job-name=k562_chip
+#SBATCH --job-name=group1
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=john.rinn@colorado.edu
+#SBATCH --mail-user=devin.tauber@colorado.edu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --mem=6gb
-#SBATCH --time=100:00:00
+#SBATCH --time=48:00:00
 #SBATCH --output=nextflow.out
 #SBATCH --error=nextflow.err
 
@@ -17,13 +17,13 @@ module load singularity/3.1.1
 
 nextflow run nf-core/chipseq -r 1.1.0 \
 -profile singularity \
---input DESIGN_BIGlebowski_fixed.csv \
+--input design.csv \
 --fasta /Shares/rinn_class/data/genomes/human/gencode/v32/GRCh38.p13.genome.fa \
 --gtf /Shares/rinn_class/data/genomes/human/gencode/v32/gencode.v32.annotation.gtf \
 --macs_gsize 2.7e9 \
 --blacklist hg38-blacklist.v2.bed \
 --save_reference \
---email john.rinn@colorado.edu \
+--email deta9300@colorado.edu \
 -resume \
 -c nextflow.config
 
